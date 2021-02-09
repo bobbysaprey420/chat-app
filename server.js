@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const http = require('http').createServer(app)
 const io = require('socket.io')(http)
-const mysql = require('mysql');
-var mysqlConnection = require('./connection');
+//const mysql = require('mysql');
+//var mysqlConnection = require('./connection');
 const PORT = process.env.PORT || 3000;
 
 http.listen(PORT, () => {
